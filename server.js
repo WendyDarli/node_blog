@@ -1,9 +1,8 @@
 const http = require('http');
 const fs = require('fs');
 
-
+//we can store it in a const for things like websockets
 const server = http.createServer((req, res) => {
-    console.log(req.url, req.method);
 
     let path = './views/';
     switch(req.url){
